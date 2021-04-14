@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block sayfa %}
+<h4>Kolon Kanser Riski Tarama Testi</h4>
+<hr>
+{% from "includes/formhelpers.html" import render_field %}
+  <form method=post>
+    <dl>
+      {{ render_field(form.yas) }}
+      {{ render_field(form.cinsiyet) }}
+      {{ render_field(form.alkol) }}
+      {{ render_field(form.kahve) }}
+      {{ render_field(form.sut)}}
+      {{ render_field(form.mvit)}}
+      {{ render_field(form.lif)}}
+      {{ render_field(form.balik) }}
+      {{ render_field(form.et) }}
+      {{ render_field(form.diyabet) }}
+      {{ render_field(form.demir) }}
+      {{ render_field(form.zinco) }}
+      {{ render_field(form.sigara) }}
+    
+    </dl>
+    <button type="submit" class="btn btn-primary btn-lg">Formu gönder</button>
+  </form>
+
+
+
+
+
+
+
+{% endblock  %}
